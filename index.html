@@ -29,18 +29,19 @@
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="html_bg">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked >
+    <label class="form-check-label" for="exampleRadios2">
+      Month
+    </label>
+  </div>
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
         <label class="form-check-label" for="exampleRadios1">
           Year
         </label>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-        <label class="form-check-label" for="exampleRadios2">
-          Month
-        </label>
-      </div>
+      
     <input id="datepicker" width="300" />
     <script>
         $('#datepicker').datepicker({

@@ -7,50 +7,46 @@ $(document).ready(function(){
         switch(Year){
             case "2018":
                 _dataPointsYear =  [
-                    { label: "Iraq", y: 15.09 },	
-                    { label: "Turks & Caicos Islands", y: 9.40 },	
-                    { label: "Nauru", y: 8.50 },
-                    { label: "Ethiopia", y: 7.96 },	
-                    { label: "Uzbekistan", y: 7.80 },
-                    { label: "Nepal", y: 7.56 },
-                    { label: "Iceland", y: 7.20 },
-                    { label: "India", y: 7.1 }
+                    { label: "Laptop", y: 15.09 },	
+                    { label: "Tablet", y: 9.40 },	
+                    { label: "Phone", y: 8.50 },
+                    { label: "Recorder", y: 7.96 },	
+                    { label: "Player Music", y: 7.80 },
+                    { label: "Camera", y: 7.56 },
+                    { label: "Television", y: 7.20 },
                 ]
                 break;
             case "2019":
                 _dataPointsYear =  [
-                    { label: "Iraq", y: 20.09 },	
-                    { label: "Turks & Caicos Islands", y: 9.40 },	
-                    { label: "Nauru", y: 8.50 },
-                    { label: "Ethiopia", y: 7.96 },	
-                    { label: "Uzbekistan", y: 7.80 },
-                    { label: "Nepal", y: 7.56 },
-                    { label: "Iceland", y: 7.20 },
-                    { label: "India", y: 7.1 }
+                    { label: "Laptop", y: 20.09 },	
+                    { label: "Tablet", y: 9.40 },	
+                    { label: "Phone", y: 8.50 },
+                    { label: "Recorder", y: 7.96 },	
+                    { label: "Player Music", y: 7.80 },
+                    { label: "Camera", y: 7.56 },
+                    { label: "Television", y: 7.20 },
                 ]
                 break;
             case "2020":
                 _dataPointsYear =  [
-                    { label: "Iraq", y: 30.09 },	
-                    { label: "Turks & Caicos Islands", y: 9.40 },	
-                    { label: "Nauru", y: 8.50 },
-                    { label: "Ethiopia", y: 7.96 },	
-                    { label: "Uzbekistan", y: 7.80 },
-                    { label: "Nepal", y: 7.56 },
-                    { label: "Iceland", y: 7.20 },
-                    { label: "India", y: 7.1 }
+                    { label: "Laptop", y: 30.09 },	
+                    { label: "Tablet", y: 9.40 },	
+                    { label: "Phone", y: 8.50 },
+                    { label: "Recorder", y: 7.96 },	
+                    { label: "Player Music", y: 7.80 },
+                    { label: "Camera", y: 7.56 },
+                    { label: "Television", y: 7.20 },
                 ]
                 break;
             default:    
                 _dataPointsYear = [
-                    { label: "Iraq", y: 0 },
-                    { label: "Turks & Caicos Islands", y: 0 },
-                    { label: "Nauru", y: 0 },
-                    { label: "Ethiopia", y: 0 },
-                    { label: "Uzbekistan", y: 0 },
-                    { label: "Nepal", y: 0 },
-                    { label: "Iceland", y: 0 },
-                    { label: "India", y: 0 }
+                    { label: "Laptop", y: 0 },
+                    { label: "Tablet", y: 0 },
+                    { label: "Phone", y: 0 },
+                    { label: "Recorder", y: 0 },
+                    { label: "Player Music", y: 0 },
+                    { label: "Camera", y: 0 },
+                    { label: "Television", y: 0 },
                 ]
                 break;
         }
@@ -58,10 +54,10 @@ $(document).ready(function(){
             var optionsYear = {
                 animationEnabled: true,
                 title: {
-                    text: "GDP Growth Rate -" + document.getElementById("datepicker").value
+                    text: "Statistical - " + Year
                 },
                 axisY: {
-                    title: "Growth Rate (in %)",
+                    title: "Statistical (in %)",
                     suffix: "%",
                     includeZero: false
                 },
@@ -74,9 +70,7 @@ $(document).ready(function(){
                     dataPoints: _dataPointsYear
                 }]
             };
-            options = null;
-            $("#chartContainerYear").CanvasJSChart(optionsYear);     
-            document.getElementById("chartContainer").innerHTML = "";  
+            $("#chartContainerYear").CanvasJSChart(optionsYear);      
         }
         else {
             var  _dataPoints;
@@ -84,60 +78,59 @@ $(document).ready(function(){
             switch(document.getElementById("datepicker").value){
                 case "05/2020":
                     _dataPoints =  [
-                        { label: "Iraq", y: 15.09},	
-                        { label: "Turks & Caicos Islands", y: 9.40 },	
-                        { label: "Nauru", y: 8.50 },
-                        { label: "Ethiopia", y: 7.96 },	
-                        { label: "Uzbekistan", y: 7.80 },
-                        { label: "Nepal", y: 7.56 },
-                        { label: "Iceland", y: 7.20 },
-                        { label: "India", y: 7.1 }
+                        { label: "Laptop", y: 15.09},	
+                        { label: "Tablet", y: 9.40 },	
+                        { label: "Phone", y: 8.50 },
+                        { label: "Recorder", y: 7.96 },	
+                        { label: "Player Music", y: 7.80 },
+                        { label: "Camera", y: 7.56 },
+                        { label: "Television", y: 7.20 },
+
                     ]        
                     break;
                 case "06/2020":
                     _dataPoints =  [
-                        { label: "Iraq", y: 20.09 },	
-                        { label: "Turks & Caicos Islands", y: 9.40 },	
-                        { label: "Nauru", y: 8.50 },
-                        { label: "Ethiopia", y: 7.96 },	
-                        { label: "Uzbekistan", y: 7.80 },
-                        { label: "Nepal", y: 7.56 },
-                        { label: "Iceland", y: 7.20 },
-                        { label: "India", y: 7.1 }
+                        { label: "Laptop", y: 20.09 },	
+                        { label: "Tablet", y: 9.40 },	
+                        { label: "Phone", y: 8.50 },
+                        { label: "Recorder", y: 7.96 },	
+                        { label: "Player Music", y: 7.80 },
+                        { label: "Camera", y: 7.56 },
+                        { label: "Television", y: 7.20 },
+
                     ]
                     break;
                 case "07/2020":
                     _dataPoints =  [
-                        { label: "Iraq", y: 30.09 },	
-                        { label: "Turks & Caicos Islands", y: 9.40 },	
-                        { label: "Nauru", y: 8.50 },
-                        { label: "Ethiopia", y: 7.96 },	
-                        { label: "Uzbekistan", y: 7.80 },
-                        { label: "Nepal", y: 7.56 },
-                        { label: "Iceland", y: 7.20 },
-                        { label: "India", y: 7.1 }
+                        { label: "Laptop", y: 30.09 },	
+                        { label: "Tablet", y: 9.40 },	
+                        { label: "Phone", y: 8.50 },
+                        { label: "Recorder", y: 7.96 },	
+                        { label: "Player Music", y: 7.80 },
+                        { label: "Camera", y: 7.56 },
+                        { label: "Television", y: 7.20 },
+
                     ]
                     break;
                 default:    
                     _dataPoints = [
-                        { label: "Iraq", y: 0 },
-                        { label: "Turks & Caicos Islands", y: 0 },
-                        { label: "Nauru", y: 0 },
-                        { label: "Ethiopia", y: 0 },
-                        { label: "Uzbekistan", y: 0 },
-                        { label: "Nepal", y: 0 },
-                        { label: "Iceland", y: 0 },
-                        { label: "India", y: 0 }
+                        { label: "Laptop", y: 0 },
+                        { label: "Tablet", y: 0 },
+                        { label: "Phone", y: 0 },
+                        { label: "Recorder", y: 0 },
+                        { label: "Player Music", y: 0 },
+                        { label: "Camera", y: 0 },
+                        { label: "Television", y: 0 },
                     ]
                     break;
             }
             var options = {
                 animationEnabled: true,
                 title: {
-                    text: "GDP Growth Rate -" + document.getElementById("datepicker").value
+                    text: "Statistical - " + document.getElementById("datepicker").value
                 },
                 axisY: {
-                    title: "Growth Rate (in %)",
+                    title: "Statistical (in %)",
                     suffix: "%",
                     includeZero: false
                 },
@@ -150,78 +143,76 @@ $(document).ready(function(){
                     dataPoints: _dataPoints
                 }]
             };
-            $("#chartContainer").CanvasJSChart(options);
-            document.getElementById("chartContainerYear").innerHTML = "";     
+            $("#chartContainer").CanvasJSChart(options); 
             
         }
     });
     
   });
-        // window.onload = function () {
-        //     var today = new Date();
-        //     if(today.getMonth() < 10)
-        //         var time = "0" + (today.getMonth()+1) + "/" + today.getFullYear();
-        //     else
-        //         var time = (today.getMonth()+1) + "/" + today.getFullYear();
+        window.onload = function () {
+            var today = new Date();
+            if(today.getMonth() < 10)
+                var time = "0" + (today.getMonth()+1) + "/" + today.getFullYear();
+            else
+                var time = (today.getMonth()+1) + "/" + today.getFullYear();
             
-        //     document.getElementById("datepicker").value = time;
-        //     var options = {
-        //         animationEnabled: true,
-        //         title: {
-        //             text: "GDP Growth Rate -"
-        //         },
-        //         axisY: {
-        //             title: "Growth Rate (in %)",
-        //             suffix: "%",
-        //             includeZero: false
-        //         },
-        //         axisX: {
-        //             title: "Countries"
-        //         },
-        //         data: [{
-        //             type: "column",
-        //             yValueFormatString: "#,##0.0#"%"",
-        //             dataPoints: [
-        //                 { label: "Iraq", y: 10.09 },	
-        //                 { label: "Turks & Caicos Islands", y: 9.40 },	
-        //                 { label: "Nauru", y: 8.50 },
-        //                 { label: "Ethiopia", y: 7.96 },	
-        //                 { label: "Uzbekistan", y: 7.80 },
-        //                 { label: "Nepal", y: 7.56 },
-        //                 { label: "Iceland", y: 7.20 },
-        //                 { label: "India", y: 7.1 },
-        //             ]
-        //         }]
-        //     };
-
-        //     var optionsYear = {
-        //         animationEnabled: true,
-        //         title: {
-        //             text: "GDP Growth Rate -"
-        //         },
-        //         axisY: {
-        //             title: "Growth Rate (in %)",
-        //             suffix: "%",
-        //             includeZero: false
-        //         },
-        //         axisX: {
-        //             title: "Countries"
-        //         },
-        //         data: [{
-        //             type: "column",
-        //             yValueFormatString: "#,##0.0#"%"",
-        //             dataPoints: [
-        //                 { label: "Year", y: 20.09 },	
-        //                 { label: "Turks & Caicos Islands", y: 9.40 },	
-        //                 { label: "Nauru", y: 8.50 },
-        //                 { label: "Ethiopia", y: 17.96 },	
-        //                 { label: "Uzbekistan", y: 7.80 },
-        //                 { label: "Nepal", y: 7.56 },
-        //                 { label: "Iceland", y: 17.20 },
-        //                 { label: "India", y: 7.1 },
-        //             ]
-        //         }]
-        //     };
-        //     $("#chartContainer").CanvasJSChart(options);
-        //     $("#chartContainerYear").CanvasJSChart(optionsYear);
-        //     }
+            document.getElementById("datepicker").value = time;
+            var options = {
+                animationEnabled: true,
+                title: {
+                    text: "Statistical - "+ time
+                },
+                axisY: {
+                    title: "Statistical (in %)",
+                    suffix: "%",
+                    includeZero: false
+                },
+                axisX: {
+                    title: "Countries"
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#,##0.0#"%"",
+                    dataPoints: [
+                        { label: "Laptop", y: 10.09 },	
+                        { label: "Tablet", y: 9.40 },	
+                        { label: "Phone", y: 8.50 },
+                        { label: "Recorder", y: 7.96 },	
+                        { label: "Player Music", y: 7.80 },
+                        { label: "Camera", y: 7.56 },
+                        { label: "Television", y: 7.20 },
+                    ]
+                }]
+            };
+            $("#chartContainer").CanvasJSChart(options);
+            var optionsYear = {
+                animationEnabled: true,
+                title: {
+                    text: "Statistical - 2020"
+                },
+                axisY: {
+                    title: "Statistical (in %)",
+                    suffix: "%",
+                    includeZero: false
+                },
+                axisX: {
+                    title: "Countries"
+                },
+                data: [{
+                    type: "column",
+                    yValueFormatString: "#,##0.0#"%"",
+                    dataPoints: [
+                        { label: "Year", y: 20.09 },	
+                        { label: "Tablet", y: 9.40 },	
+                        { label: "Phone", y: 8.50 },
+                        { label: "Recorder", y: 17.96 },	
+                        { label: "Player Music", y: 7.80 },
+                        { label: "Camera", y: 7.56 },
+                        { label: "Television", y: 17.20 },
+                  ,
+                    ]
+                }]
+            };
+            
+            $("#chartContainerYear").CanvasJSChart(optionsYear);
+}
